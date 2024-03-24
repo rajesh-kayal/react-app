@@ -1,0 +1,118 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: center;
+    margin: 20px;
+    flex-direction: row; /* Ensures items are laid out horizontally */
+}
+
+.card {
+    position: relative; /* Added */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    max-width: 100%;
+    margin: 10px; /* Added margin between cards */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-number {
+    background-color: #ff6347;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.card-author {
+    color: #ff6347;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.card-title {
+    color: #333333;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.card-description {
+    color: #666666;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card-read {
+    background-color: #ff6347;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover .card-read {
+    display: inline-block; /* Display on hover */
+}
+
+.card-read:hover {
+    background-color: #e63c25;
+}
+
+.card-media {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.card-tag {
+    background-color: #ff6347;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+/* style.css */
+.navbar {
+    background-color: #333; /* Set background color */
+    padding: 10px 0; /* Add padding */
+}
+
+.btn-group {
+    display: flex; /* Make the buttons flex items */
+    justify-content: center; /* Center align the buttons */
+}
+
+.btn-group__item {
+    background-color: #555; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding */
+    margin: 0 5px; /* Add margin */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.btn-group__item:hover {
+    background-color: #777; /* Change background color on hover */
+}
